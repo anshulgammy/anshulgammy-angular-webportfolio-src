@@ -1,0 +1,73 @@
+.all-projects-container {
+    margin-top: 100px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2em 0 5em;
+}
+
+.github-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 5px 0 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    border: thin solid #ccc;
+    background: #FFFFFF;
+    color: #212121;
+}
+.github-link:hover {
+    border-color: #28a6e4;
+    background: #ebebeb;
+}
+.github-link span {
+    white-space: nowrap;
+}
+.github-link i {
+    font-size: 1.5em;
+    padding: 5px 0 0 5px;
+}
+
+.desc {
+    padding: 0.5em 0 1.5em;
+    color: #6f6f6f;
+}
+
+.footer {
+    position: absolute;
+    bottom: 1.5em;
+}
+
+.tag-color.firebase {
+    background-color: #ffca28;
+}
+
+.tag-color.angular,
+.tag-color.angular-js {
+    background-color: #dd0031;
+}
+
+.tag-color.node {
+    background-color: #026e00;
+}
+
+.tag-color.express {
+    background-color: #555;
+}
+
+.tag-color.mongo {
+    background-color: #13aa52;
+}
+
+.tag-color.material {
+    background-color: #3f51b5;
+}
+
+.tag-color.react {
+    background-color: #282c34;
+}

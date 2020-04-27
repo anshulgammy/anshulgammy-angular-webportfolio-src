@@ -1,0 +1,109 @@
+<div class="content about-content center-stage">
+  <h1>About</h1>
+  <div class="feature-wrapper">
+    <div class="prime-card clearfix below-view" viewportCheck>
+      <div class="dp main">
+        <h2>Hi! I am Jayabratha Saha, friends call me Jay.</h2>
+        <i class="icon-android-compass"></i>
+      </div>
+      <div class="info-wrapper">
+        <div class="feature-content">
+          <p>
+            I am a frontend developer with full stack experience and also an artist and designer by passion. As a
+            developer
+            I mostly
+            work on web technologies currently focusing on MEAN(MongoDB, Express, Angular, NodeJS) technology stack. I
+            love
+            creating
+            my own designs and open source components and always keep me involved in proof of concepts and projects on
+            latest
+            technologies.
+            <br />
+            <br /> Designing has always been with me even before I started loving technology. I use to design products
+            as
+            well along
+            with portraits and paintings. Being a frontend developer, nowadays I am mostly into interface design that
+            are
+            delightful
+            and accessible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="my-tiles">
+    <h2>Tech Skills</h2>
+    <div class="skills-wrapper" viewportCheck (enteredViewport)="animateSkills()">
+      <div class="tiles-container">
+        <ul class="flex-wrapper skill-list">
+          <li #skillItem class="tile small js hide">
+            <i class="icon-social-javascript"></i>
+          </li>
+          <li #skillItem class="tile small html hide">
+            <i class="icon-social-html5"></i>
+          </li>
+          <li #skillItem class="tile small css hide">
+            <i class="icon-social-css3"></i>
+          </li>
+          <li #skillItem class="tile small angular hide">
+            <i class="icon-social-angular"></i>
+          </li>
+          <li #skillItem class="tile small react hide">
+            <img src="../../assets/react-logo.svg" alt="React" />
+          </li>
+          <li #skillItem class="tile small ts hide">
+            <img src="../../assets/typescript-logo.png" alt="TypeScript" />
+          </li>
+          <li #skillItem class="tile small nodejs hide">
+            <img src="../../assets/nodejs-logo.png" alt="NodeJS" />
+          </li>
+          <li #skillItem class="tile small sass hide">
+            <img src="../../assets/sass-logo.png" alt="Sass" />
+          </li>
+          <li #skillItem class="tile small firebase hide">
+            <img src="../../assets/firebase-logo.png" alt="Firebase" />
+          </li>
+          <li #skillItem class="tile small pwa hide">
+            <img src="../../assets/pwa-logo.png" alt="PWA" />
+          </li>
+          <li #skillItem class="tile small mongodb hide">
+            <img src="../../assets/mongodb-logo.jpeg" alt="MongoDB" />
+          </li>
+          <li #skillItem class="tile small jasmine hide">
+            <img src="../../assets/jasmine-logo.png" alt="Jasmine" />
+          </li>
+        </ul>
+      </div>
+      <p class="sub-desc">
+        I am currently working on MEAN stack technologies specializing on front-end including TypeScript, Angular along
+        with base web technologies. I have also experience in working with Ionic and Firebase.
+      </p>
+    </div>
+  </section>
+  <section class="my-work-experience">
+    <h2>Work Experience</h2>
+    <div class="exp-container">
+      <ul>
+        <li viewportCheck [padding]=100 *ngFor="let exp of experiences">
+          <div #expItem class="exp-wrapper clearfix">
+            <div class="logo-wrapper">
+              <img [src]="'assets/' + exp.imageUrl" />
+            </div>
+            <div class="exp-summary">
+              <div class="exp-header">
+                <h3>{{exp.companyName}}</h3>
+                <div class="time">{{exp.startDate}} - {{exp.endDate}}</div>
+              </div>
+              <p>{{exp.description}}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- <section class="my-timeline">
+    <div class="timeline-container" viewportCheck  [padding]=100>
+      <h2>Education</h2>
+    </div>
+  </section> -->
+</div>

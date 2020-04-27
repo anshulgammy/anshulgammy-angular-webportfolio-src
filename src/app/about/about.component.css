@@ -1,0 +1,103 @@
+.about-content ul.site-nav-list {
+    padding: 2em 0;
+}
+
+.about-content ul.site-nav-list li {
+    width: 33.3%;
+}
+
+.flex-wrapper.skill-list {
+    justify-content: flex-start;
+}
+
+.tile.angular {
+    background-color: #c22b28;
+}
+.tile.react {
+    background-color: #20232a;
+}
+.tile.js {
+    background-color: #fdc72c;
+}
+.tile.css {
+    background-color: #007acc;
+}
+.tile.html {
+    background-color: #ff5426;
+}
+.tile.ts {
+    background-color: #0074c1
+}
+.tile.firebase {
+    background-color: #ffffff;
+}
+.tile.jasmine {
+    background-color: #ffffff;
+}
+.tile.sass {
+    background-color: #ffffff;
+}
+.tile.nodejs {
+    background-color: #78b743;
+}
+.tile.pwa {
+    background-color: #3d3d3d;
+}
+.tile.mongodb {
+    background-color: #ffffff;
+}
+
+.exp-wrapper {
+    padding: 10px 0;
+    color: #212121;    
+}
+
+.exp-wrapper h3 {
+    font-size: 1.6em;
+    font-family: Roboto;
+    font-weight: normal;
+    margin: 0.5em 0;
+}
+
+.exp-wrapper .time {
+    font-size: 1.4em;
+    font-weight: lighter;
+    font-family: Roboto;
+}
+
+.logo-wrapper {
+    padding: 1em 1em 0 0;
+    width: 24vw;
+    max-width: 12em;
+    height: 18em;
+    float: left;
+}
+
+.logo-wrapper img {
+    width: 95%;
+    max-width: 200px;
+}
+
+.exp-header {
+    height: auto;
+}
+
+@media (max-width: 650px) {
+    .logo-wrapper {
+        height: 8em;
+    }
+
+    .exp-wrapper,
+    .skills-wrapper,
+    .feature-content>p {
+        padding: 0.5em 1em;
+    }
+
+    .flex-wrapper.skill-list {
+        flex-wrap: wrap;
+    }
+
+    .exp-header {
+        height: 6em;
+    }
+}

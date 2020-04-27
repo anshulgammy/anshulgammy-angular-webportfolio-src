@@ -1,0 +1,123 @@
+<div class="home-content center-stage">
+  <div class="overview-wrapper">
+    <div class="prime-card overview art-overview" [class.above-view]="steps[1].isAboveView" [class.below-view]="steps[1].isBelowView"
+      viewportCheck [padding]=padding [checkAboveView]=true (enteredViewport)="handleCardInView(1)">
+      <div class="dp overview-dp">
+        <h2>Art</h2>
+        <div class="alpha-initial-bg">A</div>
+        <div class="underline"></div>
+        <div class="button-wrapper">
+          <div class="background"></div>
+          <button routerLink="/art">VIEW GALLERY</button>
+        </div>
+      </div>
+      <div class="info-wrapper">
+        <div class="overview-content-background"></div>
+        <div class="overview-content">
+          A collection of my sketches and paintings
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overview-wrapper">
+    <div class="prime-card overview projects-overview" [class.above-view]="steps[2].isAboveView" [class.below-view]="steps[2].isBelowView"
+      viewportCheck  [padding]=padding [checkAboveView]=true (enteredViewport)="handleCardInView(2)" >
+      <div class="dp overview-dp">
+        <h2>Projects</h2>
+        <div class="alpha-initial-bg">P</div>
+        <div class="underline"></div>
+        <div class="button-wrapper">
+          <div class="background"></div>
+          <button routerLink="/projects">VIEW PROJECTS</button>
+        </div>
+      </div>
+      <div class="info-wrapper">
+        <div class="overview-content-background"></div>
+        <div class="overview-content">
+          How I learn new technologies. See my hobby projects
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overview-wrapper">
+    <div class="prime-card overview blog-overview" [class.above-view]="steps[3].isAboveView" [class.below-view]="steps[3].isBelowView"
+      viewportCheck  [padding]=padding [checkAboveView]=true (enteredViewport)="handleCardInView(3)">
+      <div class="dp overview-dp">
+        <h2>Blog</h2>
+        <div class="alpha-initial-bg">B</div>
+        <div class="underline"></div>
+        <div class="button-wrapper">
+          <div class="background"></div>
+          <button routerLink="/blog">GO TO BLOG</button>
+        </div>
+      </div>
+      <div class="info-wrapper">
+        <div class="overview-content-background"></div>
+        <div class="overview-content">
+          My thoughts on technology and life. See my blog posts
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overview-wrapper">
+    <div class="prime-card overview about-overview" [class.above-view]="steps[4].isAboveView" [class.below-view]="steps[4].isBelowView"
+      viewportCheck  [padding]=padding [checkAboveView]=true (enteredViewport)="handleCardInView(4)">
+      <div class="dp overview-dp">
+        <h2>About</h2>
+        <div class="alpha-initial-bg">A</div>
+        <div class="underline"></div>
+        <div class="button-wrapper">
+          <div class="background"></div>
+          <button routerLink="/about">ABOUT ME</button>
+        </div>
+      </div>
+      <div class="info-wrapper">
+        <div class="overview-content-background"></div>
+        <div class="overview-content">
+          I am artist, developer and wanna be ....
+          Learn more about me
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overview-wrapper">
+    <div class="prime-card overview contact-overview" [class.above-view]="steps[5].isAboveView" [class.below-view]="steps[5].isBelowView"
+      viewportCheck  [padding]=padding [checkAboveView]=true (enteredViewport)="handleCardInView(5)">
+      <div class="dp overview-dp">
+        <h2>Contact</h2>
+        <div class="alpha-initial-bg">C</div>
+        <div class="underline"></div>
+        <div class="button-wrapper">
+          <div class="background"></div>
+          <button routerLink="/contact">CONTACT ME</button>
+        </div>
+      </div>
+      <div class="info-wrapper">
+        <div class="overview-content-background"></div>
+        <div class="overview-content">
+          Interested to work with me. Contact me
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="scroll-indicator" *ngIf="!(isMobile || headerState === HEADER_STATE.Initial)">
+  <div class="me home-anchors" [ngClass]="{'active': stepCount === 0}" (click)="setStepCount(0)">
+    <div class="inner-dot"></div>
+  </div>
+  <div class="art home-anchors" [ngClass]="{'active': stepCount === 1}" (click)="setStepCount(1)">
+    <div class="inner-dot"></div>
+  </div>
+  <div class="projects home-anchors" [ngClass]="{'active': stepCount === 2}" (click)="setStepCount(2)">
+    <div class="inner-dot"></div>
+  </div>
+  <div class="blog home-anchors" [ngClass]="{'active': stepCount === 3}" (click)="setStepCount(3)">
+    <div class="inner-dot"></div>
+  </div>
+  <div class="about home-anchors" [ngClass]="{'active': stepCount === 4}" (click)="setStepCount(4)">
+    <div class="inner-dot"></div>
+  </div>
+  <div class="contact home-anchors" [ngClass]="{'active': stepCount === 5}" (click)="setStepCount(5)">
+    <div class="inner-dot"></div>
+  </div>
+</div>
